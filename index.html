@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Email Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- General Page Container -->
+    <div class="general-container container-fluid d-flex flex-column min-vh-100 light-theme">
+        <!-- Navigation Bar -->
+        <div class="row d-flex align-items-center justify-content-between bg-lightgray no-select">
+            <!-- Menu Button -->
+            <div class="col-auto d-flex align-items-center">
+                <div class="col-auto mt-3 mx-2">
+                    <!-- User Profile -->
+                    <div class="user-profile">
+                        <img src="profile-picture.jpg" alt="Profile Picture">
+                        <div>
+                            <h4>John Doe</h4>
+                            <p>johndoe@mymail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation Bar -->
+        <!-- 3 Columns Row -->
+        <div class="row h-100 flex-grow-1">
+            <!-- Column 1 (Folders) -->
+            <div class="d-flex flex-column col-sm-4 col-lg-12 col-xl-2 bg-lightgray">
+                <div class="row">
+                    <div class="container mt-4 d-flex flex-column no-select">
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="stretch-button btn btn-primary">
+                                <span class="text-blue"></span><i class="bi bi-pencil-square fs-5"></i>
+                                Compose
+                            </button>
+                        </div>
+                        <!-- General Folders -->
+                        <div class="list-group w-100 mt-3" id="gray">
+                            <a href="#" class="is-selected text-black list-group-item"><i class="bi bi-inbox"></i><span
+                                    class="icon-text">Inbox</span></a>
+                            <a href="#" class="text-black list-group-item mt-1"><i class="bi bi-star"></i><span
+                                    class="icon-text">Favorites</span></a>
+                            <a href="#" class="text-black list-group-item mt-1"><i
+                                    class="bi bi-envelope-check"></i><span class="icon-text">Sent</span></a>
+                            <a href="#" class="text-black list-group-item mt-1"><i
+                                    class="bi bi-file-earmark-text"></i><span class="icon-text">Drafts</span></a>
+                            <a href="#" class="text-black list-group-item mt-1"><i class="bi bi-archive"></i><span
+                                    class="icon-text">Archive</span></a>
+                            <a href="#" class="text-black list-group-item mt-1"><i class="bi bi-trash"></i><span
+                                    class="icon-text">Trash</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2 (List of Emails) -->
+            <div
+                class="d-none d-sm-flex flex-column col-sm-8 col-md-5 col-lg-5 col-xl-4 bg-custom1 px-2 email-list-column">
+                <div
+                    class="container-fluid mt-1 mb-1 d-flex flex-column justify-content-start p-4 bg-lightgray flex-fill rounded">
+        
+                    <div class="row d-flex align-items-center justify-content-between mb-3 p-3 bg-custom1 rounded">
+                        <!-- Search Column -->
+                        <div class="col-auto col-md-12 col-lg-6 order-md-3 order-lg-2 flex-fill mt-md-3 mt-lg-0">
+                            <form role="search">
+                                <input type="search" class="form-control bg-custom2"
+                                    placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                 
+                    <!-- Mail Items -->
+                    <div
+                        class="flex-fill mail-items-container d-flex flex-column align-items-center justify-content-between mail-container overflow-auto p-2">
+                        <div
+                            class="noclick mail-item d-flex justify-content-center align-items-center row bg-custom1 is-selected ">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-7 mt-3">
+                                    <h6>LinkedIn</h6>
+                                </div>
+                                <div class="col-auto text-end d-none d-md-block ">
+                                    <p>Jun 02, 11:35 AM</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p>You have a new connection request</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mail-item mt-1 d-flex justify-content-center align-items-center  bg-custom1">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-7 mt-3">
+                                    <h6 class="fw-bold">Bay Valley Tech</h6>
+                                </div>
+                                <div class="col-auto text-end d-none d-md-block ">
+                                    <p class="fw-bold">May 13, 9:36 AM</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p>Spring Cohort Announcement</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mail-item mt-1 d-flex justify-content-center align-items-center row bg-custom1">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-7 mt-3">
+                                    <h6 class="fw-bold">John Yan</h6>
+                                </div>
+                                <div class="col-auto text-end d-none d-md-block ">
+                                    <p class="fw-bold">Apr 12, 8:23 PM</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p>Learn the Secrets of JavaScript Today!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mail-item mt-1 d-flex justify-content-center align-items-center row bg-custom1">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-7 mt-3">
+                                    <h6 class="fw-bold">Michael Dale</h6>
+                                </div>
+                                <div class="col-auto text-end d-none d-md-block ">
+                                    <p class="fw-bold">Mar 28, 10:10 PM</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p>Work Issues: Please Advise</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mail-item mt-1 d-flex justify-content-center align-items-center row bg-custom1">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-7 mt-3">
+                                    <h6 class="fw-bold">Betty Crocker</h6>
+                                </div>
+                                <div class="col-auto text-end d-none d-md-block ">
+                                    <p class="fw-bold">June 09, 10:13 AM</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p>Summer bakes with Betty</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mail-item mt-1 d-flex justify-content-center align-items-center row bg-custom1">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-7 mt-3">
+                                    <h6 class="fw-bold">Chase Sapphire</h6>
+                                </div>
+                                <div class="col-auto text-end d-none d-md-block ">
+                                    <p class="fw-bold">Mar 21, 12:10 AM </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p>Credit Card Special Offer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mail-item mt-1 d-flex justify-content-center align-items-center row bg-custom1">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-7 mt-3">
+                                    <h6 class="fw-bold">Sally's Baking Addiction</h6>
+                                </div>
+                                <div class="col-auto text-end d-none d-md-block ">
+                                    <p class="fw-bold">Apr 11, 8:42 AM</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p>Spring Sale: Grab today!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Mail Items -->
+                </div>
+            </div>
+            <!-- Column 3 (Email Viewport) -->
+            <div class="d-none d-md-block col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-6 bg-custom1 p-4">
+                <div class="container d-flex flex-column bg-custom2 rounded m-0 p-md-4 h-100 flex-grow-1">
+                    <div class="row bg-custom1 p-2">
+                        <div class="col-9">
+                            <p><span><b>From:</b></span> LinkedIn</p>
+                            <p><span><b>To:</b></span> You</p>
+                            <p><span><b>Subject:</b></span>You have a new connection</p>
+                        </div>
+                        <div class="d-none d-md-block col-3 text-end fw-bold">
+                            <p>6/02/2023</p>
+                            <p>11:35 AM</p>
+                        </div>
+                    </div>
+                    <div class="email-content row bg-custom2 flex-grow-1 text-gray p-2 border-bottom">
+                        <p>
+                            <br>Dear John,<br><br>
+                            Vitae torquent ad purus. Sodales consequat tortor in sociosqu primis, erat purus et
+                            dis.<br><br>
+                            Condimentum; sodales vitae tellus velit nec pulvinar. Habitant curae; arcu curae; ornare
+                            potenti blandit. Venenatis sagittis at odio habitasse magnis maecenas interdum interdum
+                            fermentum nullam? Lorem suspendisse habitasse consectetur!<br><br>
+                            Lobortis vehicula habitasse tincidunt maecenas diam. Himenaeos sociis dis imperdiet augue
+                            tristique. Sapien, sociis eu egestas auctor non fringilla ad cum.<br><br>
+                            LinkedIn Team<br>
+                        </p>
+                        <div>
+                            <form>
+                                <textarea id="textarea" name="textarea" placeholder="Reply ..."></textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End 3 Columns Row -->
+    </div>
+    <!-- End General Page Container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>

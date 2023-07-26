@@ -1,0 +1,113 @@
+/* Body */
+html,
+body {
+    color: black;
+    background: #D9D9D9;
+}
+
+/* User Profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+/* List Group (Column 1) */
+.list-group-item {
+    background-color: #D9D9D9;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.icon-text {
+    margin-left: 8px;
+}
+
+a.list-group-item:hover, 
+a.list-group-item:focus{
+    background: #0d6efd;
+}
+
+/* Mail Items (Column 2) */
+.mail-items-container {
+    height: 75vh;
+}
+
+.mail-item {
+    width: 100%;
+}
+
+.mail-item:hover {
+    filter: brightness(105%);
+    transform: scale(101%);
+    cursor: default;
+}
+
+.mail-item:hover:not(.noclick) {
+    cursor: pointer !important;
+}
+
+.mail-item:active:not(.text-muted, .noclick) {
+    transform: translateY(1px);
+}
+
+/* Buttons */
+.stretch-button {
+    width: 75%;
+}
+
+/* Colors */
+.bg-black {
+    background-color: #D9D9D9;
+}
+
+.bg-custom1 {
+    background-color: #D9D9D9;
+}
+
+.bg-custom2 {
+    background-color: #ECE9E9;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    .is-selected {
+        background: #E4E3E3;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #E4E3E3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c9c6c6;
+    width: 2px;
+    border-radius: 5px;
+} 
+
+/* Text Area */
+textarea {
+    width: 100%;
+    height: 100%; 
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
